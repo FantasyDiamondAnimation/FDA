@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>FDA</title>
+</head>
+
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>FDA</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="selecionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="selecionar(this)">¿QUE SOMOS?</a></li>
+                            <li><a href="#skills" onclick="selecionar(this)">HABILIDADES</a></li>
+                            <li><a href="#proyectos" onclick="selecionar(this)">PROYECTOS</a></li>
+                            <li><a href="#contacto" onclick="selecionar(this)">CONTACTANOS</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- icono de menu resposive-->
+                    <div id="icono-nav" onclick="responsiveMenu()"> 
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <a href="#sobremi">MAS INFORMACION</a>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="imgs/PORTADA-FDA.png" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">¿Que Somos?</p>
+            <h2>Hola gente, esto es<span> FDA</span></h2>
+            <h3>Una agencia de animacion y magia garanizada</h3>
+            <p>Nuestra labor es cuidar y/o mantener viva la imaginacio de la gente lo mas que se pueda, para ello implementamos animaciones que hacen despertar en la gente esa curiosidad necesaria.</p>
+            <p>La idea de hacer animaciones en forma de pelicula, cortometraje, caricaruras, adaptaciones animadas, etc, surge de la problematica que se ha presentado mas frecuente en los ultimos años y esa es la falta de creatividad o pereza mental, ya que, las historias ue consumimos habitualmente nos dan un desenlace cliche o con poca enseñanza.</p>
+            <p>Las grandes empresas de animacion ahora con mas frecuencia hacen animaciones con cada vez menos cariño, o mejor dicho poco interezantes en cuestiones de historia, ya que con el paso del tiempo y la facilidad que ofrece la tecnologia, se han preocupado mas en lo visible o superficiañ que se pueda llegar a ves una pelicula que en la historia que esta esté contando.</p>
+            <p>"No sirve de nada tener una buena historia si no se sabe contar bien".</p>
+
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!--SECCION HABILIDADES-->
+    <div class="contenedor-skills" id="skills">
+        <p class="titulo-seccion">HABILIDADES</p>
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"> </span>Dibujo</p>
+                <span class="porcentanjes">95%</span>
+            </div>
+            <div class="barra">
+                <div class="barra-progreso1" id="draw"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"> </span>Animacion</p>
+                <span class="porcentanjes">60%</span>
+            </div>
+            <div class="barra">
+                <div class="barra-progreso2" id="animacion"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"> </span>Creacion de Guion</p>
+                <span class="porcentanjes">70%</span>
+            </div>
+            <div class="barra">
+                <div class="barra-progreso3" id="guion"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"> </span>Html & CSS</p>
+                <span class="porcentanjes">72%</span>
+            </div>
+            <div class="barra">
+                <div class="barra-progreso4" id="html"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"> </span>Photoshop</p>
+                <span class="porcentanjes">60%</span>
+            </div>
+            <div class="barra">
+                <div class="barra-progreso5" id="Photoshop"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"> </span>Fotografia</p>
+                <span class="porcentanjes">75%</span>
+            </div>
+            <div class="barra">
+                <div class="barra-progreso6" id="foto"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--SECCION PROYECTOS-->
+    <section id="proyectos">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="imgs/PROYECTO-1.jpg" alt="">
+                <div class="info">
+                    <h4>CARLOS EL TOPO QUE GIRA</h4>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="imgs/PROYECTO-2.gif" alt="">
+                <div class="info">
+                    <h4>Jirafa Facherita</h4>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="imgs/PROYECTO-4.png" alt="">
+                <div class="info">
+                    <h4>LeBlanc</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="imgs/PROYECTO-3.png" alt="">
+                <div class="info">
+                    <h4>Magic Wood</h4>
+                </div>
+            </div>
+
+    </section>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">CONTACTANOS</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Email" class="input-mitad">
+                </div>
+                <div class="fila"> 
+                    <input type="text" placeholder="Tema" class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Comentario" class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Comentario" class="btn-enviar">
+            </form>
+        </div>
+
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
